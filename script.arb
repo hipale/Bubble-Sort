@@ -1,11 +1,8 @@
 def bubble_sort(num_arr)
-x = 0
-i = 0
+x = 0; i = 0
 until i >= num_arr.length - 1
 until x >= num_arr.length - 1
-  if num_arr[x] > num_arr[x+1].to_i  
-    num_arr[x],num_arr[x+1] = num_arr[x+1], num_arr[x]
-  end
+  if num_arr[x] > num_arr[x+1] then num_arr[x],num_arr[x+1] = num_arr[x+1], num_arr[x] end
   x += 1
 end
   x = 0
@@ -14,4 +11,4 @@ end
   num_arr
 end
 
-puts bubble_sort([6,5,1,2])
+puts bubble_sort([4,3,78,2,0,2])
